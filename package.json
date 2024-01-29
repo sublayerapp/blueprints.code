@@ -1,0 +1,46 @@
+{
+  "name": "sublayer-blueprints",
+  "displayName": "sublayer_blueprints",
+  "description": "A plugin to enable the use of sublayer blueprints in your project",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:sublayer-blueprints.replaceSelection",
+    "onCommand:sublayer-blueprints.submitBlueprint"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "sublayer-blueprints.replaceSelection",
+        "title": "Generate from blueprint"
+      },
+      {
+        "command": "sublayer-blueprints.submitBlueprint",
+        "title": "Submit the selected code as a blueprint"
+      }
+    ]
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "pretest": "yarn run lint",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@types/vscode": "^1.85.0",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.5"
+  }
+}
