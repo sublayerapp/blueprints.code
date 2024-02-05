@@ -39,3 +39,8 @@ A [Sublayer Blueprints](https://github.com/sublayerapp/blueprints) server runnin
 
 Initial release of Sublayer Blueprints Plugin
 
+## Community
+
+Like what you see, or looking for more people working on the future of
+programming with LLMs? Come join us in the [Promptable Architecture
+Discord](https://discord.gg/sjTJszPwXt)
