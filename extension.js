@@ -3,6 +3,10 @@
 const vscode = require('vscode');
 const axios = require('axios');
 
+function getHost() {
+  return vscode.workspace.getConfiguration('sublayer-blueprints').get('host');
+}
+
 function getVisualSelection() {
   const editor = vscode.window.activeTextEditor;
 
@@ -16,7 +20,8 @@ function getVisualSelection() {
 async function submitVisualSelectionAsBlueprint() {
   const selectedText = getVisualSelection();
   const json_data = { code: selectedText };
-  const url = "http://localhost:3000/api/v1/blueprints";
+  const host = getHost();
+  const url = `${host}/api/v1/blueprints`;
 
   try {
     await axios.post(url, json_data);
@@ -32,7 +37,8 @@ async function replaceVisualSelectionWithServerResponse() {
 
   const selectedText = getVisualSelection();
   const json_data = { description: selectedText };
-  const url = "http://localhost:3000/api/v1/blueprint_variants";
+  const host = getHost();
+  const url = `${host}/api/v1/blueprint_variants`;
 
   try {
     const response = await axios.post(url, json_data);

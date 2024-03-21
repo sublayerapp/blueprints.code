@@ -2,7 +2,7 @@
   "name": "sublayer-blueprints",
   "displayName": "sublayer_blueprints",
   "description": "A plugin to enable the use of sublayer blueprints in your project",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -15,6 +15,15 @@
   ],
   "main": "./extension.js",
   "contributes": {
+    "configuration": {
+      "title": "Sublayer Blueprints",
+      "properties": {
+        "sublayer-blueprints.host": {
+          "type": "string",
+          "default": "http://localhost:3000"
+        }
+      }
+    },
     "commands": [
       {
         "command": "sublayer-blueprints.replaceSelection",
