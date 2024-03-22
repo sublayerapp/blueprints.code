@@ -6,13 +6,16 @@ blueprints using descriptions of what you're working on.
 
 ## Installation
 
+If the plugin is not available on the marketplace yet, you can install it
+manually:
+
 Run `git clone git@github.com:sublayerapp/blueprints.code.git`
 
 In your "Extensions" pane, click the "..." at the top and select "Install from
 VSIX" 
 
 Navigate to the folder where you cloned the plugin, and select
-`sublayer-blueprints-0.0.2.vsix` to install.
+`sublayer-blueprints-0.0.3.vsix` to install.
 
 ## Features
 
@@ -43,6 +46,10 @@ Adding a custom host:
 
 A [Sublayer Blueprints](https://github.com/sublayerapp/blueprints) server running locally on port 3000
 
+
+### 0.0.3
+
+Update package attributes in prep for publishing
 
 ### 0.0.2
 

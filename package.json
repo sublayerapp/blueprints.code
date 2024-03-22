@@ -1,8 +1,13 @@
 {
   "name": "sublayer-blueprints",
-  "displayName": "sublayer_blueprints",
-  "description": "A plugin to enable the use of sublayer blueprints in your project",
-  "version": "0.0.2",
+  "displayName": "Sublayer Blueprints",
+  "description": "A plugin to enable the use of Sublayer Blueprints in your project",
+  "publisher": "sublayer",
+  "version": "0.0.3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sublayerapp/blueprints.code"
+  },
   "engines": {
     "vscode": "^1.85.0"
   },
