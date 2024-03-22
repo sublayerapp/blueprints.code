@@ -15,7 +15,7 @@ In your "Extensions" pane, click the "..." at the top and select "Install from
 VSIX" 
 
 Navigate to the folder where you cloned the plugin, and select
-`sublayer-blueprints-0.0.3.vsix` to install.
+`sublayer-blueprints-0.0.4.vsix` to install.
 
 ## Features
 
@@ -46,6 +46,10 @@ Adding a custom host:
 
 A [Sublayer Blueprints](https://github.com/sublayerapp/blueprints) server running locally on port 3000
 
+
+### 0.0.4
+
+Add icon for marketplace
 
 ### 0.0.3
 

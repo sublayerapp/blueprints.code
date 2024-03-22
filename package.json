@@ -3,11 +3,12 @@
   "displayName": "Sublayer Blueprints",
   "description": "A plugin to enable the use of Sublayer Blueprints in your project",
   "publisher": "sublayer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "repository": {
     "type": "git",
     "url": "https://github.com/sublayerapp/blueprints.code"
   },
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.85.0"
   },
